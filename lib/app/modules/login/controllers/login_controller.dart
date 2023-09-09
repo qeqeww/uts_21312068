@@ -3,13 +3,19 @@ import 'package:get/get.dart';
 
 class LoginController extends GetxController {
   //TODO: Implement LoginController
-  final cEmail = TextEditingController();
-  final CPass = TextEditingController();
+  final cNpm = TextEditingController();
+  final cNama = TextEditingController();
+  final cAlamat = TextEditingController();
+  final cProgram_studi = TextEditingController();
+  final cJenis_kelamin = TextEditingController();
 
   @override
   void onClose() {
-    cEmail.dispose();
-    CPass.dispose();
+    cNpm.dispose();
+    cNama.dispose();
+    cAlamat.dispose();
+    cProgram_studi.dispose();
+    cJenis_kelamin.dispose();
     super.onClose();
   }
 }

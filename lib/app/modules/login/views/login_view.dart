@@ -20,25 +20,42 @@ class LoginView extends GetView<LoginController> {
         child: ListView(
           children: [
             TextField(
-              controller: controller.cEmail,
+              controller: controller.cNpm,
               decoration: InputDecoration(
-                labelText: "Email",
+                labelText: "Npm",
               ),
             ),
             TextField(
-              controller: controller.CPass,
+              controller: controller.cNama,
               decoration: InputDecoration(
-                labelText: "Pasword",
+                labelText: "Nama",
               ),
             ),
             SizedBox(
               height: 10,
             ),
-            Align(
-              alignment: Alignment.centerRight,
-              child: TextButton(
-                onPressed: () => Get.toNamed(Routes.RESET_PASSWORD),
-                child: Text("Reset Password"),
+             TextField(
+              controller: controller.cAlamat,
+              decoration: InputDecoration(
+                labelText: "Alamat",
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+             TextField(
+              controller: controller.cProgram_studi,
+              decoration: InputDecoration(
+                labelText: "Program_studi",
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+             TextField(
+              controller: controller.cJenis_kelamin,
+              decoration: InputDecoration(
+                labelText: "Jenis_kelamin",
               ),
             ),
             SizedBox(
@@ -46,21 +63,8 @@ class LoginView extends GetView<LoginController> {
             ),
             ElevatedButton(
                 onPressed: () =>
-                    cAuth.login(controller.cEmail.text, controller.CPass.text),
-                child: Text("Login")),
-            SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text("Belum Punya akun ?"),
-                TextButton(
-                  onPressed: () => Get.toNamed(Routes.SIGNUP),
-                  child: Text("Daftar Disini"),
-                )
-              ],
-            )
+                    cAuth.login(controller.cNpm.text, controller.cNama.text),
+                child: Text("Simpan")),
           ],
         ),
       ),
