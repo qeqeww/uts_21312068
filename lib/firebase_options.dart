@@ -28,10 +28,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -50,20 +47,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDdlE3NbHvYtOnV85lZcGnzoBFapad5NBE',
-    appId: '1:112552997604:web:37711f21688c2ba56c32f1',
-    messagingSenderId: '112552997604',
-    projectId: 'fir-21312068',
-    authDomain: 'fir-21312068.firebaseapp.com',
-    storageBucket: 'fir-21312068.appspot.com',
-    measurementId: 'G-EQFPF89BYY',
+    apiKey: 'AIzaSyCWgK3_IocGDNRNo7EtMglyJrVJGuC8QYg',
+    appId: '1:308475421606:web:70ff83dc50cf4805222567',
+    messagingSenderId: '308475421606',
+    projectId: 'uas21312068',
+    authDomain: 'uas21312068.firebaseapp.com',
+    storageBucket: 'uas21312068.appspot.com',
+    measurementId: 'G-HK38C5310M',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC9AzIrKOIqGs9cap-Ve3g3v1tPnASUK_c',
-    appId: '1:112552997604:android:1ffe4c28bd3c4c9a6c32f1',
-    messagingSenderId: '112552997604',
-    projectId: 'fir-21312068',
-    storageBucket: 'fir-21312068.appspot.com',
+    apiKey: 'AIzaSyD2hmcCYzhtOGuRIwLwywtZm-DYzp8XeiU',
+    appId: '1:308475421606:android:6fef39c6283a2a82222567',
+    messagingSenderId: '308475421606',
+    projectId: 'uas21312068',
+    storageBucket: 'uas21312068.appspot.com',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyDMNE9mqLrNyAf8M3jsBdKBUAWRNfxywWA',
+    appId: '1:308475421606:ios:198f750a349277c3222567',
+    messagingSenderId: '308475421606',
+    projectId: 'uas21312068',
+    storageBucket: 'uas21312068.appspot.com',
+    iosClientId: '308475421606-i655rjb3d5sdrr53qsjuf68uulgjqj2l.apps.googleusercontent.com',
+    iosBundleId: 'com.ifgabsp.projekGet',
   );
 }

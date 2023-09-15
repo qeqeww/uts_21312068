@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
-class UpdateProductController extends GetxController {
+class UpdatemahasiswaController extends GetxController {
   late TextEditingController cNama;
   late TextEditingController cHarga;
 

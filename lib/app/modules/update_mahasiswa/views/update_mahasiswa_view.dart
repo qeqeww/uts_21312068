@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/updatde_product_controller.dart';
+import '../controllers/update_mahasiswa_controller.dart';
 
-class UpdateProductView extends GetView<UpdateProductController> {
-  const UpdateProductView({Key? key}) : super(key: key);
+class UpdatemahasiswaView extends GetView<UpdatemahasiswaController> {
+  const UpdatemahasiswaView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('UpdateProductView'),
+        title: const Text('UpdateMahasiswaView'),
         centerTitle: true,
       ),
       body: FutureBuilder<DocumentSnapshot<Object?>>(
